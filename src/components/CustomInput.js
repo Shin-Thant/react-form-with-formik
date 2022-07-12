@@ -3,7 +3,7 @@ import React from "react";
 
 export const CustomInput = ({ label, ...props }) => {
     const [field, meta, helpers] = useField(props);
-    console.log(field, meta, helpers, props);
+    // console.log(field, meta, helpers, props);
 
     return (
         <>
