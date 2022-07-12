@@ -28,7 +28,7 @@ export const advancedFormSchema = yup.object().shape({
         .required("Username required!"),
     jobType: yup
         .string()
-        .notOneOf(
+        .oneOf(
             ["designer", "developer", "manager", "other"],
             "Choose Valid Job!"
         )
